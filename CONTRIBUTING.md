@@ -1,11 +1,11 @@
-#Contributing to Crawlly
+# Contributing to Crawlly
 Crawlly welcomes your contribution to our project.
 
-###Issues
+### Issues
 Feel free to submit issues and enhancement requests.
 
-###Contributing
-#####Steps
+### Contributing
+##### Steps
 * Fork the repo on GitHub
 * Clone the project to your own machine
 * Create a new branch
