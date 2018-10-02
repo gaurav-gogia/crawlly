@@ -7,7 +7,7 @@ Feel free to submit issues and enhancement requests.
 ## Providing Feedback
 Your comments and feedback are always welcome!
 
-## Contributing
+## Contributing <img src="https://image.flaticon.com/icons/svg/25/25406.svg" height="24">
 1. Fork the repo on GitHub
 2. Clone the project to your own machine
 3. Create a new branch
