@@ -4,7 +4,7 @@ Crawlly welcomes your contribution to our project. We thank you for all of your
 ## Reporting Issues <img src="https://image.flaticon.com/icons/svg/25/25652.svg" height="24">
 Feel free to submit issues and enhancement requests.
 
-## Providing Feedback <img src="https://image.flaticon.com/icons/svg/25/25379.svg" height="24">
+## Providing Feedback &nbsp;<img src="https://image.flaticon.com/icons/svg/25/25379.svg" height="24">
 Your comments and feedback are always welcome!
 
 ## Contributing <img src="https://image.flaticon.com/icons/svg/25/25406.svg" height="24">
