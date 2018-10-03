@@ -3,4 +3,5 @@
 2. [Shashank Anand](https://github.com/onionspider)
 3. [MReis](https://github.com/MReis89)
 4. [Zanark](https://github.com/Zanark)
+5. [allebb](http://github.com/allebb)
 
