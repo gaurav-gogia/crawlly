@@ -64,7 +64,7 @@ func find(data []string) (found []string) {
 			found = append(found, data[i])
 		}
 	}
-	return found
+	return
 }
 
 func save(name string, text []string) {
