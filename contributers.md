@@ -4,4 +4,4 @@
 3. [MReis](https://github.com/MReis89)
 4. [Zanark](https://github.com/Zanark)
 5. [allebb](http://github.com/allebb)
-
+6. [freddiaN](https://github.com/freddian)
