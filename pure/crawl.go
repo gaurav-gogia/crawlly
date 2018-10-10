@@ -139,8 +139,32 @@ func main() {
 	log.Debug(os.Args)
 
 	if len(os.Args) < 2 {
-		log.Fatalln("Missing url arg")
+		fmt.Println("Use 'help' for more...")
+		log.Fatalln("Missing URL arg")
 	}
 
-	recurDownloader(os.Args[1], 0)
+	if os.Args[1] == "help" || os.Args[1] == "h" {
+		fmt.Println(help())
+	} else {
+		recurDownloader(os.Args[1], 0)
+	}
+}
+
+// Help is called when user type 'help' in args
+func help() string {
+	return `
+    __  ____    ____  __    __  _      _      __ __ 
+   /  ]|    \  /    T|  T__T  T| T    | T    |  T  T
+  /  / |  D  )Y  o  ||  |  |  || |    | |    |  |  |
+ /  /  |    / |     ||  |  |  || l___ | l___ |  ~  |
+/   \_ |    \ |  _  |l  '  '  !|     T|     Tl___, |
+\     ||  .  Y|  |  | \      / |     ||     ||     !
+ \____jl__j\_jl__j__j  \_/\_/  l_____jl_____jl____/  v. 0.1
+
+	A simple web crawller in Go
+
+	Use mode: 'crawl https://example.com' 
+
+	Commands:
+	help | -h	"Use for HELP!"`
 }
