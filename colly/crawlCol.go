@@ -54,8 +54,7 @@ func fetch(url string) string {
 	return string(data)
 }
 
-func find(data []string) []string {
-	var found []string
+func find(data []string) (found []string) {
 	r := regexp.MustCompile(findExp)
 	for i := range data {
 		if r.MatchString(data[i]) {
@@ -65,7 +64,7 @@ func find(data []string) []string {
 			found = append(found, data[i])
 		}
 	}
-	return found
+	return
 }
 
 func save(name string, text []string) {
