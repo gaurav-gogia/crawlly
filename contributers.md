@@ -6,3 +6,4 @@
 5. [allebb](http://github.com/allebb)
 6. [freddiaN](https://github.com/freddian)
 7. [sarathsp06](https://github.com/sarathsp06)
+8. [RafaelGomides](https://github.com/RafaelGomides)
