@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"os"
 	"regexp"
@@ -47,7 +47,8 @@ func fetch(url string) string {
 		panic(err)
 	}
 	defer res.Body.Close()
-	data, err := ioutil.ReadAll(res.Body)
+
+	data, err := io.ReadAll(res.Body)
 	if err != nil {
 		panic(err)
 	}
