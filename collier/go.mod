@@ -2,7 +2,10 @@ module collier
 
 go 1.21.0
 
-require github.com/gocolly/colly v1.2.0
+require (
+	github.com/gocolly/colly v1.2.0
+	golang.org/x/exp v0.0.0-20230817173708-d852ddb80c63
+)
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.1 // indirect

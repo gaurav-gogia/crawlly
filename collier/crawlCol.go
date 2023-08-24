@@ -9,16 +9,22 @@ import (
 	"strings"
 
 	"github.com/gocolly/colly"
+	"golang.org/x/exp/slices"
 )
 
 const (
 	findExp      = `^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$`
 	leadCloseExp = `^[\s\p{Zs}]+|[\s\p{Zs}]+$`
 	insidersExp  = `[\s\p{Zs}]{2,}`
-	root         = ""
 )
 
 func main() {
+	if len(os.Args) < 2 {
+		fmt.Println("need url as cli argument")
+	}
+
+	root := os.Args[1]
+
 	c := colly.NewCollector()
 
 	c.OnHTML("a[href]", func(e *colly.HTMLElement) {
@@ -59,7 +65,7 @@ func find(data []string) (found []string) {
 	r := regexp.MustCompile(findExp)
 	for i := range data {
 		if r.MatchString(data[i]) {
-			if redundant(found, data[i]) {
+			if slices.Contains(found, data[i]) {
 				continue
 			}
 			found = append(found, data[i])
@@ -85,13 +91,4 @@ func standardspace(page string) string {
 	insiders := regexp.MustCompile(insidersExp)
 	final := leadClose.ReplaceAllString(page, "")
 	return insiders.ReplaceAllString(final, " ")
-}
-
-func redundant(pool []string, val string) bool {
-	for p := range pool {
-		if pool[p] == val {
-			return true
-		}
-	}
-	return false
 }
