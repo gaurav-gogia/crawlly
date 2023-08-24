@@ -153,7 +153,7 @@ func main() {
 // Help is called when user type 'help' in args
 func help() string {
 	return `
-    __  ____    ____  __    __  _      _      __ __ 
+    __  ____    ____  __    __  _      _      __ __
    /  ]|    \  /    T|  T__T  T| T    | T    |  T  T
   /  / |  D  )Y  o  ||  |  |  || |    | |    |  |  |
  /  /  |    / |     ||  |  |  || l___ | l___ |  ~  |
@@ -163,7 +163,7 @@ func help() string {
 
 	A simple web crawller in Go
 
-	Use mode: 'crawl https://example.com' 
+	Use mode: 'crawl https://example.com'
 
 	Commands:
 	help | -h	"Use for HELP!"`
